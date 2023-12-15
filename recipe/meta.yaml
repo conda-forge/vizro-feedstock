@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: 157bfe08d62583a641218280c1c36e54a8636e05a1ca79588434385403fc8979
+  sha256: 9167596688d10601808400dcd5bec4dd62f0621faf584391f66ff30541a69e75
 
 build:
   noarch: python
@@ -21,15 +21,17 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - dash >=2.11
+    - dash >=2.14.1
     - dash-bootstrap-components
     - pandas
-    - pydantic >=1.10.13,<2
+    - pydantic >=1.10.13
     - dash-daq
+    - dash-mantine-components
     - ipython >=8.10.0
     - numpy >=1.22.2
     - tornado >=6.3.2
     - setuptools >=65.5.1
+    - werkzeug
     - markupsafe
 
 test:
