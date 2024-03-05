@@ -21,8 +21,9 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - dash >=2.14.1
+    - dash >=2.14.1,!=2.16.0
     - dash-bootstrap-components
+    - dash-ag-grid >=31.0.0
     - pandas
     - pydantic >=1.10.13
     - dash-daq
@@ -33,10 +34,14 @@ requirements:
     - setuptools >=65.5.1
     - werkzeug
     - markupsafe
-
+    
 test:
   imports:
     - vizro
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   summary: Vizro is a package to facilitate visual analytics.
