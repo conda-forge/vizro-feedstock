@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.13" %}
+{% set version = "0.1.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: a968339c31a347e5ff8df5667313900bba3a232f1fd148a992ff46e52ba8b530
+  sha256: cf287de5e8f0fa904456c8c692dc6cec1f25c6a6fdb64b19372602e8d5d2bae2
 
 build:
   noarch: python
