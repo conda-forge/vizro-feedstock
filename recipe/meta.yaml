@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.14" %}
+{% set version = "0.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: cf287de5e8f0fa904456c8c692dc6cec1f25c6a6fdb64b19372602e8d5d2bae2
+  sha256: f1e856aac5441f23ef617abd19f3e516bbcf29d4c08acbf268e4d2328375ceea
 
 build:
   noarch: python
@@ -20,13 +20,15 @@ requirements:
     - hatchling
     - pip
   run:
+    - flask-caching >=2
+    - wrapt >=1
     - python >=3.8
     - dash >=2.14.1,!=2.16.0
     - dash-bootstrap-components
     - dash-ag-grid >=31.0.0
     - pandas
     - pydantic >=1.10.13
-    - dash-mantine-components
+    - dash-mantine-components <0.13.0
     - numpy >=1.22.2
     - setuptools >=65.5.1
     - werkzeug >=3.0.1
