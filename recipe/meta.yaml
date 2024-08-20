@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.19" %}
+{% set version = "0.1.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: 6ed7bb81c3e60d492c7adc30b6059221f5387dd4b98cc4a0650a629e9ca3b2d4
+  sha256: 0043bf652aebf475efc421fda26d134541e0b0917d7ea89def5952892b463d95
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - ruff
     - flask-caching >=2
     - wrapt >=1
     - python >=3.8
