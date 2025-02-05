@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.32" %}
+{% set version = "0.1.33" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: aaa57c264cdd3aae1d27e77829bf8df2a0a32c3f7e9294ab01e9ca230607ea89
+  sha256: d96a61775bf772dea044d5d18617479e782ecd4eadaca2ffd0c8534df0acf131
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - dash-ag-grid >=31.0.0
     - pandas >=2
     - plotly >=5.24.0
-    - pydantic >=2.9.0
+    - pydantic >=2.7.0
     - dash-mantine-components >=0.15.1,<0.16.dev0
     - flask-caching >=2
     - wrapt >=1
