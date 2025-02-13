@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.33" %}
+{% set version = "0.1.34" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: d96a61775bf772dea044d5d18617479e782ecd4eadaca2ffd0c8534df0acf131
+  sha256: c809d84adf49a7e246d0e8f2e4ab4e194efa956585d9497172b536de0a1c2d05
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - packaging
     - python >={{ python_min }}
     - dash >=2.18.0,<3
 # dash 2.18.1 has requirement Flask<3.1,>=1.0.4, but you have flask 3.1.0.
