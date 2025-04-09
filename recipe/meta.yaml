@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.36" %}
+{% set version = "0.1.37" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: ed3669452f4243eae6b077d1644df16aa38b38338ada5434b0e108203188a394
+  sha256: 3fc8ca1cfacdb9ebb75bf7d4399b07b6a8072aee0c89b300fd5077cfa0ee0ea1
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - flask >=1.0.4,<3.1
 # dash 2.18.1 has requirement Werkzeug<3.1, but you have werkzeug 3.1.3.
     - werkzeug <3.1
-    - dash-bootstrap-components <2.0.0
+    - dash-bootstrap-components
     - dash-core-components
     - dash-html-components
     - dash-table
