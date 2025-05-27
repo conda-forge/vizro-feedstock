@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vizro-feedstock
 
 Home: https://vizro.mckinsey.com/
 
-Package license: Apache-2.0
+Package license: MIT AND Apache-2.0
 
-Summary: Vizro is a package to facilitate visual analytics.
+Summary: Vizro is a low-code framework for building high-quality data visualization apps.
 
 Development: https://github.com/mckinsey/vizro
 
