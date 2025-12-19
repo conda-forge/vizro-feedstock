@@ -20,7 +20,6 @@ requirements:
     - hatchling
     - pip
   run:
-    - python-box
     - python >={{ python_min }}
     - dash >=3.1.1,<4
     - dash-bootstrap-components >=2
@@ -34,6 +33,7 @@ requirements:
     - black
     - autoflake
     - packaging
+    - python-box
 
 test:
   imports:
