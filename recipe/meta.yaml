@@ -1,5 +1,5 @@
 {% set name = "vizro" %}
-{% set version = "0.1.52" %}
+{% set version = "0.1.53" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: 68328d51ce10affd58cb25ec51444dc94c2a53eec69769a860556d44955f527c
+  sha256: d227779226f7317e8042782b76f10c4c34e01f8f6ddb7c488183945087d5b6b9
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - vizro-dash-components
     - python >={{ python_min }}
     - dash >=4,<5
     - dash-bootstrap-components >=2
