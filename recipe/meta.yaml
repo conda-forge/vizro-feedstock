@@ -20,12 +20,12 @@ requirements:
     - hatchling
     - pip
   run:
-    - vizro-dash-components
     - python >={{ python_min }}
     - dash >=4,<5
     - dash-bootstrap-components >=2
     - dash-ag-grid ==33.3.3
     - dash-mantine-components >=2.0.0
+    - vizro-dash-components
     - pandas >=2
     - plotly >=5.24.0
     - pydantic >=2.7.0
