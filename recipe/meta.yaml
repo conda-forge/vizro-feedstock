@@ -1,13 +1,13 @@
 {% set name = "vizro" %}
-{% set version = "0.1.60" %}
+{% set version = "0.1.61" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
-  sha256: dcd62dae4f330f75a9e8ba0d846246fee556350918e322810a0f7047c937b60c
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/vizro-{{ version }}.tar.gz
+  sha256: 64719dfe3a201429a1c994e903933a44abf4b2b5f8f088e8c95d0aad8d776068
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - pandas >=2
     - plotly >=5.24.0
     - pydantic >=2.7.0
-    - flask-caching >=2
+    - flask-caching >=2,<2.5
     - wrapt >=1
     - black
     - autoflake
